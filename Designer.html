@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+            box-shadow: red;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            margin-left: 40px;
+        }
+        .logo img{
+            height: 45px;
+            width: 55px;
+            margin-left: -30px;
+            border-radius: 3px;
+        }
+        header {
+            background-color: black;
+            color: rgb(245, 244, 244);
+            display: flex;
+            align-items: center;
+        }
+        header ul {
+            display: flex;
+            list-style-type: none; 
+        }
+        header ul li {
+            position: relative;
+            margin-right: 10px;
+        }
+        header ul li a {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.7);
+            padding: 10px;
+            display: block;
+        }
+        header ul li a:hover {
+            color: white;
+        }
+        header ul li .links {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            display: none;
+            flex-direction: column;
+            background-color: rgb(11, 10, 10);
+            padding: 10px;
+            z-index: 1;
+        }
+        header ul li:hover .links {
+            display: flex;
+        }
+        .button {
+            display: flex;
+            list-style-type: none; 
+            margin-left: 260px; 
+        }
+         .button button{
+            padding: 10px 10px;
+            background-color: #0056b3;
+            border: none;
+            border-radius: 2px;
+        }
+        .button button:hover{
+            background-color: #007BFF;
+        }
+        /**page1**/
+        body {
+            color: white;
+        }
+        .rrr {
+            display: flex;
+            background-color: black;
+            color: #fff;
+        }
+        h1 {
+            font-size: 4em;
+            text-align: left;
+            margin-left: 30px;
+            margin-top: 30%;
+            margin-bottom: 1px;
+            color: dimgrey;
+        }
+        h3 {
+            font-size: 3em;
+            text-align: left;  
+            margin-left: 30px;
+            margin-top: 0;
+            margin-bottom: 1px;
+        }
+        p {
+            font-size: 1em;
+            margin-left: 30px;
+            margin-bottom: 30px;   
+        }
+        .rrr p1 {
+            margin-left: 30%;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1em;
+            border-radius: 5px;
+        }
+        .rrr  button:hover {
+            background-color: #0056b3;
+        }
+        .web {
+            margin-top: 50px;
+            text-align: left;
+            color: darkgrey;
+        }
+        .rrr img  {
+            height: 500px;
+            width: 700px;
+            margin-left: 150px;
+            margin-top: 100px;
+        }
+        .container {
+            color: rgb(247, 244, 244);   
+        }
+        h2 {
+            font-size: 6em;
+            text-align: left;
+            margin-left: 70px;
+            margin-top: 10%;
+            margin-bottom: 0;
+            color: black; 
+        }
+        #paragraph1 {
+            font-size: 3.5em;
+            font-style: italic;
+            text-align: left;
+            margin-left: 70px;
+            margin-right: 35%;
+            margin-bottom: 10%;
+            color: black;
+        }
+        /**page 2**/
+        .container1 {
+            display: flex;
+            margin-bottom: 10%;
+            align-items: center;
+        }
+        #hadink1 {
+            font-size: 2.5em;
+            text-align: left;  
+            margin-left: 25px;
+            margin-top: 10px;
+            color: black;
+        }
+        #paragraph2 {
+            font-size: 1.5em;
+            font-style: oblique;
+            text-align: left;
+            margin-left: 25px;
+            margin-right: 3%;
+            color: black;
+        }
+        .web1 {
+            margin-top: 50px;
+            text-align: left;
+            color: black;
+        }
+        #hadink2 {
+            font-size: 2.5em;
+            text-align: left;
+            margin-left: 25px;
+            margin-top: 15%;
+            color: black;
+        }
+        #paragraph3 {
+            font-size: 1.5em;
+            font-style: oblique;
+            text-align: left;
+            margin-left: 25px;
+            margin-right: 3%;
+            color: black;
+        }
+        .web2 {
+            margin-top: 50px;
+            text-align: left;
+            color: black;
+        }
+        #hadink3 {
+            font-size: 2.5em;
+            text-align: left;
+            margin-left: 25px;
+            margin-top: 15%;
+            color: black;
+        }
+        #paragraph4 {
+            font-size: 1.5em;
+            font-style: oblique;
+            text-align: left;
+            margin-left: 25px;
+            margin-right: 3%;
+            color: black;
+        }
+        .web3 {
+            margin-top: 50px;
+            text-align: left;
+            color: black;
+        }
+        video {
+            height: 200%;
+            width: 60%;
+            margin-left: 150px;
+            margin-top: 30px;
+            position: sticky;
+        }
+        #box {
+            background-color: white;
+            width: 300%;
+            height: 500px;
+            border: none;
+            overflow-y: scroll;
+            cursor: all-scroll; 
+        }
+        #box::-webkit-scrollbar {
+            display: none;
+        }
+        /**page3**/
+        .container2 {
+            background-color: white;
+            display: flex;
+        }
+        #paragraph5 {
+            font-size: 3.5em;
+            font-style: italic;
+            text-align: left;
+            margin-left: 70px;
+            margin-right: 35%; 
+            color: black;
+        }
+        #videos {
+            height: 78%;
+            width: 100%;
+            margin-top: 10%;
+        }
+        #w4 {
+            font-size: 2.5em;
+            text-align: left;
+            margin-left: 6%;
+            margin-top: 15%;
+            color: black;
+        }
+        #paragraph6 {
+            font-size: 1.5em;
+            font-style: oblique;
+            text-align: left;
+            margin-left: 7%;
+            margin-right: 17%;
+            color: black;
+        }
+        .web4 {
+            margin-top: 50px;
+            text-align: left;
+            margin-left: 13%;
+            color: black;
+        }
+        #w5 {
+            font-size: 2.5em;
+            text-align: left;
+            margin-left: 6%;
+            margin-top: 5%;
+            color: black;
+        }
+        #paragraph7 {
+            font-size: 1.5em;
+            font-style: oblique;
+            text-align: left;
+            margin-left: 7%;
+            margin-right: 17%;
+            color: black;
+        }
+        .web5 {
+            font-size: 1.5em;
+            margin-top: 50px;
+            text-align: left;
+            margin-left: 7%;
+            color: black;
+        }
+        #w6 {
+            font-size: 2.5em;
+            text-align: left;
+            margin-left: 6%;
+            margin-top: 5%;
+            color: black;
+        }
+        #paragraph8 {
+            font-size: 1.5em;
+            font-style: oblique;
+            text-align: left;
+            margin-left: 7%;
+            margin-right: 17%;
+            color: black;
+        }
+        .web6 {
+            margin-top: 50px;
+            text-align: left;
+            margin-left: 13%;
+            color: black;
+        }
+        #box1 {
+            background-color: white;
+            width: 110%;
+            height: 500px;
+            border: none;
+            overflow-y: scroll;
+            cursor: all-scroll; 
+        }
+        #box1::-webkit-scrollbar {
+            display: none;
+        }
+        #image{
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            margin-left: 5%;
+            background: white;
+        }
+        #pimg {
+            margin-top: 7%;
+            color: black;
+        }
+        .image {
+            display: flex;
+        }
+        /**page4**/
+        .container3 {
+            text-align: left;   
+        }
+        .container3 h1 {
+            font-size: 8em;
+            color: black;
+            margin-left: 13%;
+        }
+        .container3 p {
+            font-size: 2.5em;
+            margin-left: 12%;
+            color: black;
+        }
+        .shop-section{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            
+        }
+        .box{
+            background-color: rgb(226, 222, 222);
+            border: 0 solid black;
+            height: 170px;
+            width: 30%;           
+            margin-top: 10px;
+        }
+        .box-content i{
+            color: rgb(109, 117, 124);
+            padding: 5% 5%;
+        }
+        .box .box-content :hover{
+            color: black;
+
+        }
+        .box-content p{
+            margin-left: 1rem;
+            margin-top: 15%;
+            color: black;
+        }
+        /* FOOTER1..*/
+        footer{
+           height: 400px;
+           width: 100%;
+           background-color: black;
+           color: white;
+           display: flex;
+           column-gap: 90px;
+           margin-top: 25px;
+           padding-top: 10px;
+           text-align: center;
+           border: 1px solid;
+           border-color: #b2bbc4;
+        }
+        .bb{
+            display: flex;
+            column-gap: 40px;
+            padding: 10px 100px;
+           
+            
+        }
+        .bb h4{
+            font-size: 20px;
+            text-align: center;
+            margin-right: 10%;
+            color: darkgray;
+        }
+        .a{
+            font-size: 12px;
+            margin-left: 10px;
+        }
+        .a button{
+            color: white;
+            background-color: rgb(21, 21, 202);
+            padding: 10px 10px;
+            margin-left: 10px;
+        }
+        .a button:hover{
+            background-color: rgb(58, 58, 146);
+        }
+        /* FOOTER 2..*/
+        .ram {
+            width: 100%;
+            background-color: rgb(3, 3, 3);
+            color: darkgray;
+            column-gap: 50px;
+            padding-top: 10px;             
+        }
+        .foot1 {
+            display: flex;
+            column-gap: 90px;
+            padding: 20px 60px;
+        }
+        .foot1 h5  {
+            font-size: 13.9px;
+            text-align: left;
+        }
+        .foot1 h5:hover{
+            color: white;
+            outline-style: none;
+            text-decoration: unset
+        }
+        .foot1 h6 {
+            font-size: 18px;
+            color: white;
+        }
+        .symbols {
+            padding: 1% 7%;
+            padding-top: 5%;
+            padding-bottom: 3%;
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid;
+            border-color: #b2bbc4;
+            height: 40px;
+            width: 1070px;
+            margin-left: 23px;
+            margin-top: 10px;
+            border-left: 0;
+            border-right: 0;
+            border-bottom: 0;
+        }                         
+        .icons i {
+            padding-right: 20px;
+            font-size: 150%;
+        }
+    </style>
+</head>
+<body>
+    <!--navbor-->
+    <header>
+        <div class="logo">
+            <img src="webflow-1.png" alt="" height="75px" width="75px">
+            <h4 href="#" class="logo active">Webflow</h4>
+        </div>
+        <ul>
+            <li>
+                <a href="#">Product <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="links">
+                    <li><a href="#">Designer</a></li>
+                    <li><a href="#">CMS</a></li>
+                    <li><a href="#">Ecommerce</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Marketplace <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="links">
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Apps</a></li>
+                    <li><a href="#">Libraries</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Learn</a></li>
+            <li>
+                <a href="#">Resources <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="links">
+                    <li><a href="#">community</a></li>
+                    <li><a href="#">Ebooks</a></li>
+                    <li><a href="#">Forun</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="button">
+            <li><button>Log in</button></li>
+            <li><button>Contact Sales</button></li>
+            <li class="active"><button>Get started—it's free</button></li>
+        </ul>
+    </header>
+<!--page1-->
+   <div class="rrr">
+        <div>
+            <h1>Designer</h1>
+            <h3>Experience the power of code.writing it.</h3>
+            <p>Take control of HTML5, CSS3, and JavaScript in a completely visual canvas — and let Webflow translate your design into clean, semantic code that's ready to publish to the web, or hand off to developers.</p>
+            <p1>Get started — it's free</p1>
+            <p class="web">LEARN MORE ABOUT THE DESIGNER</p>
+        </div>
+        <div >
+            <img src="designer1.jpg" width="300" height="100" style="float:right">
+        </div>
+    </div>
+    <div class="container">
+        <h2>Structure</h2>
+        <p id="paragraph1">Fill a blank canvas with everything HTML5 has to offer</p>
+    </div>
+    <!--page2-->
+    <div class="container1">  
+        <div id="box">
+            <h3 id="hadink1">Build with raw ingredients</h3>
+            <p id="paragraph2">Drag in unstyled HTML elements for complete control, use the Quick Stack element to build and modify common website structures quickly, or utilize pre-built complex elements like sliders, tabs, background videos, and more.</p>
+            <p class="web1">Add Elements panel</p>
+        
+            <h3 id="hadink2">Create reusable components</h3>
+            <p id="paragraph3">Turn nav bars, footers, signup forms, and more into components that you can reuse, maintain, create variations of, or modify on-the-fly across your whole website with as little as one click.</p>
+            <p class="web2">Creating components</p>
+        
+            <h3 id="hadink3">Keep your elements organized</h3>
+            <p id="paragraph4">View and reorganize your pages' element structure in the Navigator — and ensure your pages remain accessible to all</p>
+            <p class="web3">Managing element structure</p>
+        </div>
+        <video src="video.mp4"  width="500" height="700"  style="float:right"></video>
+    </div>
+    <hr>
+    <h2>Style</h2>
+        <p id="paragraph5">Build flexbox and grid layouts, then style every element to perfection</p> 
+        <!--page3-->
+    <div class="container2">
+    <div>
+        <video id="videos" src="video.mp4"  width="500" height="700"  style="float:right"></video> 
+    </div>
+        <div id="box1">
+            <h3 id="w4">Design responsively</h3>
+            <p id="paragraph6">Easily preview and adjust layouts for the wide array of modern devices.</p>
+            <p class="web4">Responsive design in webflow</p>
+            <div class="image">
+                <img id="image" src="eswar.jpg">
+                <p id="pimg">Paul Irish </br>Chrome Dev Tools, Google</p>
+            </div>
+            <h3 id="w5">Create reusable classes</h3>
+            <p id="paragraph7">Work with a CSS-based class system to make style changes across multiple elements at the same time.</p>
+            <p class="web5">“Webflow is crazy good. I feel like you guys are the first to build the right UX around styling and CSS.”</p>
+            <h3 id="w6">Build layouts your way</h3>
+            <p id="paragraph8">From flexbox and CSS grid to inline block to absolute positioning, you have complete control over layout.</p>
+            <p class="web6">CSS Grid in webflow</p>
+        </div>
+    </div>
+    <!--page4-->
+    <div class="container3">
+        <h1>All features</h1>
+        <p>Discover everything you can do with Webflow.</p>
+    </div>
+    <div class="shop-section">
+        <div class="box1 box">
+            <div class="box-content">
+                <i class="fa-solid fa-globe"> Localization</i>
+            <p>Create fully localized experiences for site visitors around the world</p>
+            </div>
+        </div>
+        <div class="box1 box">
+            <div class="box-content">
+                <i class="fa-solid fa-user"> User Accounts</i>
+            <p>Build gated content experiences for your audience.</p>
+            </div>
+        </div>
+        <div class="box1 box">
+            <div class="box-content">
+                <i class="fa-solid fa-pen"> Edit mode</i>
+            <p>Custom-built environment for content teammates.</p>
+            </div>
+        </div>
+        <div class="box1 box">
+            <div class="box-content">
+                <i class="fa-solid fa-cloud"> Hosting</i>
+            <p>Set up lightning-fast managed hosting in just a few clicks.</p>
+            </div>
+        </div>
+        <div class="box1 box">
+            <div class="box-content">
+                <i class="fa-solid fa-link"> DevLink</i>
+            <p>Create production-ready React components visually in Webflow.</p>
+            </div>
+        </div>
+        <div class="box1 box">
+            <div class="box-content">
+                <i class="fa-solid fa-bolt"> Interactions</i>
+            <p>Build websites interactions and animations visually.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--FOOTER1-->
+    <footer>
+        <div class="a">
+            <h1>Get started for free</h1>
+            <p>Try Webflow for as long as you like with our free Starter <br>plan. Purchase
+                 a paid Site plan to publish, host, and <br>unlock additional features.</p><br>
+            <button>Get started — it's free</button>     
+        </div>
+        <div class="b">
+            <h4>TRANSFORMING THE DESIGN PROCESS AT</h4><br><br>
+            <div class="bb">
+                <div class="b1">
+                    <h4>PHILIPS</h4><br>
+                    <h4>MONDAY</h4><br>
+                    <h4>DROPBOX</h4><br>
+                </div>
+                <div class="b2">
+                    <h4>UPWORK</h4><br>
+                    <h4>DISCORD</h4><br>
+                    <h4>MURAL</h4><br>
+                </div>
+                <div class="b3">
+                    <h4>RAKUTEN</h4><br>
+                    <h4>GREEN HOUSE</h4><br>
+                    <h4>ORANGETHVORY</h4><br>
+                </div>
+                <div class="b4">
+                    <h4>DELL</h4><br>
+                    <h4>TED</h4><br>
+                    <h4>PWC</h4><br>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--FOOTER 2-->
+    <div class="ram">
+        <div class="foot1">
+            <div class="a1">
+                <h6>PRODUCT</h6><br>
+                <h5>Platform</h5><br>
+                <h5>Designer</h5><br>
+                <h5>CMS</h5><br>
+                <h5>Ecommerce</h5><br>
+                <h5>Interactions</h5><br>
+                <h5>SEO</h5><br>
+                <h5>Localization</h5><br>
+                <h5>Edit mode</h5><br>
+                <h5>Hosting</h5><br>
+            </div>
+            <div class="a2">
+                <h6>SOLUTIONS</h6><br>
+                <h5>Enterprise</h5><br>
+                <h5>Startups</h5><br>
+                <h5>Global alliances</h5><br>
+                <h5>Agencies</h5><br>
+                <h5>Freelancers</h5><br>
+                <h5>Classrooms</h5><br>
+            </div>
+            <div class="a3">
+                <h6>RESOURCES</h6><br>
+                <h5>University</h5><br>
+                <h5>Blog</h5><br>
+                <h5>Customer stories</h5><br>
+                <h5>Webinars and ebooks</h5><br>
+                <h5>Apps</h5><br>
+                <h5>Libraries</h5><br>
+                <h5>Templates</h5><br>
+                <h5>Developers</h5><br>
+                <h5>Made in Webflow</h5><br>
+            </div>
+            <div class="a4">
+                <h6>COMPANY</h6><br>
+                <h5>About</h5><br>
+                <h5>Press</h5><br>
+                <h5>Webflow Shop</h5><br>
+                <h5>Terms of Service</h5><br>
+                <h5>Privacy policy</h5><br>
+            </div>
+            <div class="a5">
+                <h6>COMMUNITY</h6><br>
+                <h5>Discover the community</h5><br>
+                <h5>Partner with Webflow</h5><br>
+                <h5>Certified partners</h5><br>
+                <h5>Become a Template Designer</h5><br>
+            </div>
+            <div class="a6">
+                <h6>GET HELP</h6><br>
+                <h5>Support</h5><br>
+                <h5>Pricing</h5><br>
+                <h5>Status</h5><br>
+            </div>
+        </div>
+        <div class="symbols">
+        <div id="symbol">&#169; 2024 Webflow, Inc. All rights reserved</div>
+            <div class="icons">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-telegram"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
